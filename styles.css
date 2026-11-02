@@ -121,6 +121,13 @@ button {
 
 .hero h1,
 .section-heading h2,
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 .contact h2 {
     font-family: "Playfair Display", serif;
     font-weight: 500;
@@ -564,6 +571,16 @@ button {
 
     .contact {
         padding: 85px 7%;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-actions .button {
+        width: 100%;
+        max-width: 320px;
     }
 
     .footer {
