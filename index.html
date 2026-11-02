@@ -1,20 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guilherme Cavalheiro — Desenvolvedor de Sites e Soluções Digitais.">
-    <title>Guilherme Cavalheiro | Desenvolvedor Digital</title>
+
+    <meta name="description" content="Guilherme Cavalheiro, desenvolvedor independente de sites e soluções digitais. Landing pages, sites institucionais e projetos personalizados.">
+
+    <meta name="theme-color" content="#111111">
+
+    <title>Guilherme Cavalheiro | Desenvolvedor Independente</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="header">
-    <a href="#inicio" class="logo">GC<span>.</span></a>
+    <a href="#inicio" class="logo" aria-label="Guilherme Cavalheiro - Início">
+        GC<span>.</span>
+    </a>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+    <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+    >
         ☰
     </button>
 
@@ -28,136 +46,254 @@
 </header>
 
 <main>
+
+    <!-- APRESENTAÇÃO -->
     <section class="hero" id="inicio">
+
         <div class="hero-content">
-            <span class="eyebrow">DESENVOLVIMENTO DIGITAL</span>
-            <h1>Ideias que se transformam em <span>experiências digitais.</span></h1>
+
+            <span class="eyebrow">DESENVOLVEDOR INDEPENDENTE</span>
+
+            <h1>
+                Ideias que se transformam em
+                <span>experiências digitais.</span>
+            </h1>
+
             <p>
-                Desenvolvedor de Sites e Soluções Digitais.
-                Crio experiências modernas para profissionais,
-                empreendedores e empresas.
+                Desenvolvo sites e soluções digitais para
+                profissionais, empreendedores e empresas.
+                Tecnologia, criatividade e funcionalidade
+                para transformar suas ideias em realidade.
             </p>
 
             <div class="hero-actions">
-                <a href="#projetos" class="button primary">Ver projetos</a>
-                <a href="#contato" class="button secondary">Entrar em contato</a>
+                <a href="#projetos" class="button primary">
+                    Ver projetos
+                </a>
+
+                <a href="#contato" class="button secondary">
+                    Solicitar orçamento
+                </a>
             </div>
 
             <div class="hero-note">
                 <span class="status-dot"></span>
                 Disponível para novos projetos
             </div>
+
         </div>
 
         <div class="hero-decoration">
             <div class="decoration-card">
+
                 <span class="decoration-number">01</span>
+
                 <span class="decoration-line"></span>
-                <p>CRIATIVIDADE<br>TECNOLOGIA<br>RESULTADOS</p>
+
+                <p>
+                    CRIATIVIDADE<br>
+                    TECNOLOGIA<br>
+                    RESULTADOS
+                </p>
+
                 <span class="decoration-symbol">GC</span>
+
             </div>
         </div>
+
     </section>
 
+    <!-- SOBRE -->
     <section class="section about" id="sobre">
+
         <div class="section-heading">
             <span class="eyebrow">QUEM SOU</span>
             <h2>Tecnologia com propósito.</h2>
         </div>
 
         <div class="about-content">
+
             <p>
-                Sou Guilherme Cavalheiro, desenvolvedor de sites e
-                soluções digitais. Meu objetivo é transformar ideias
-                em projetos digitais funcionais, modernos e acessíveis.
+                Sou Guilherme Cavalheiro, desenvolvedor independente
+                de sites e soluções digitais. Meu objetivo é transformar
+                ideias em projetos digitais funcionais, modernos
+                e acessíveis.
             </p>
+
             <p>
                 Trabalho com tecnologias web e utilizo ferramentas
                 de inteligência artificial como apoio ao processo
                 de desenvolvimento, aprendizado e criação.
             </p>
+
         </div>
+
     </section>
 
+    <!-- PROJETOS -->
     <section class="section projects" id="projetos">
+
         <div class="section-heading">
             <span class="eyebrow">PORTFÓLIO</span>
             <h2>Projetos em destaque.</h2>
-            <p>Conheça alguns dos meus projetos demonstrativos.</p>
+            <p>
+                Conheça alguns dos meus projetos demonstrativos.
+            </p>
         </div>
 
         <div class="project-grid">
+
             <article class="project-card">
+
                 <div class="project-visual barber">
                     <span>NAVALHA NOBRE</span>
                     <small>BARBEARIA • EXPERIÊNCIA DIGITAL</small>
                 </div>
+
                 <div class="project-info">
-                    <span class="project-type">SITE INSTITUCIONAL</span>
+
+                    <span class="project-type">
+                        SITE INSTITUCIONAL
+                    </span>
+
                     <h3>Navalha Nobre</h3>
+
                     <p>
                         Conceito de presença digital para uma barbearia,
                         com apresentação de serviços e acesso ao agendamento.
                     </p>
-                    <a href="https&#58;//cavalheiroguilherme328-ctrl.github.io/Navalha-Nobre-/"  rel="noopener noreferrer">
 
-                        Conhecer projeto ↗
+                    <a
+                        href="https&#58;//cavalheiroguilherme328-ctrl.github.io/Navalha-Nobre-/"
+                        rel="noopener noreferrer"
+                    >
+                        Visitar Projeto  ↗
                     </a>
+
                 </div>
+
             </article>
 
             <article class="project-card">
+
                 <div class="project-visual derma">
                     <span>INNOVA DERMA</span>
                     <small>ESTÉTICA • BELEZA • BEM-ESTAR</small>
                 </div>
+
                 <div class="project-info">
-                    <span class="project-type">SITE INSTITUCIONAL</span>
+
+                    <span class="project-type">
+                        SITE INSTITUCIONAL
+                    </span>
+
                     <h3>Innova Derma</h3>
+
                     <p>
                         Site demonstrativo para uma clínica de estética,
                         com identidade visual elegante e apresentação de serviços.
                     </p>
-                    <a href="https&#58;//cavalheiroguilherme328-ctrl.github.io/innova-derma-v2/"  rel="noopener noreferrer">
 
+                    <a
+                        href="https&#58;//cavalheiroguilherme328-ctrl.github.io/innova-derma-v2/"
+                        rel="noopener noreferrer"
+                    >
                         Visitar projeto ↗
                     </a>
+
                 </div>
+
             </article>
+
         </div>
+
     </section>
 
+    <!-- SERVIÇOS -->
     <section class="section services" id="servicos">
+
         <div class="section-heading">
+
             <span class="eyebrow">O QUE DESENVOLVO</span>
-            <h2>Soluções digitais.</h2>
+
+            <h2>Soluções digitais para seu negócio.</h2>
+
+            <p>
+                Desenvolvo sites modernos, responsivos e adaptados
+                aos objetivos de cada profissional ou empresa.
+            </p>
+
         </div>
 
         <div class="service-grid">
+
             <article class="service-card">
+
                 <span>01</span>
+
                 <h3>Landing Pages</h3>
-                <p>Páginas para apresentar produtos, serviços e campanhas.</p>
+
+                <p>
+                    Páginas estratégicas para divulgar produtos,
+                    serviços e campanhas, atrair clientes e gerar
+                    oportunidades.
+                </p>
+
             </article>
 
             <article class="service-card">
+
                 <span>02</span>
+
                 <h3>Sites Institucionais</h3>
-                <p>Presença digital profissional para empresas e negócios.</p>
+
+                <p>
+                    Sites completos para apresentar empresas,
+                    profissionais, serviços, diferenciais e canais
+                    de atendimento.
+                </p>
+
             </article>
 
             <article class="service-card">
+
                 <span>03</span>
-                <h3>Interfaces Personalizadas</h3>
-                <p>Interfaces web pensadas para cada projeto e necessidade.</p>
+
+                <h3>Sites Personalizados</h3>
+
+                <p>
+                    Sites desenvolvidos sob medida, com funcionalidades
+                    e recursos adaptados às necessidades de cada projeto.
+                </p>
+
             </article>
+
         </div>
+
+        <div class="services-cta">
+
+            <p>Tem um projeto em mente?</p>
+
+            <a
+                href="mailto:cavalheiroguilherme328@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20or%C3%A7amento"
+                class="button primary"
+            >
+                Solicitar orçamento
+            </a>
+
+        </div>
+
     </section>
 
+    <!-- PROCESSO -->
     <section class="section process">
+
         <div class="section-heading">
+
             <span class="eyebrow">TECNOLOGIAS E PROCESSO</span>
+
             <h2>Como trabalho.</h2>
+
         </div>
 
         <div class="technology-list">
@@ -174,23 +310,49 @@
             passa pelo planejamento e desenvolvimento e termina
             com testes e ajustes para diferentes dispositivos.
         </p>
+
     </section>
 
+    <!-- CONTATO -->
     <section class="contact" id="contato">
+
         <span class="eyebrow">VAMOS CONVERSAR?</span>
-        <h2>Tem uma ideia?<br><span>Vamos tirar do papel.</span></h2>
-        <p>Entre em contato para conversar sobre seu projeto.</p>
-        <a href="mailto:cavalheiroguilherme328@gmail.com" class="button primary">
+
+        <h2>
+            Tem uma ideia?<br>
+            <span>Vamos tirar do papel.</span>
+        </h2>
+
+        <p>
+            Entre em contato para conversar sobre seu projeto
+            e solicitar um orçamento.
+        </p>
+
+        <a
+            href="mailto:cavalheiroguilherme328@gmail.com?subject=Contato%20sobre%20desenvolvimento%20de%20site"
+            class="button primary"
+        >
             Enviar e-mail
         </a>
+
     </section>
+
 </main>
 
+<!-- RODAPÉ -->
 <footer class="footer">
+
     <a href="#inicio" class="logo">GC<span>.</span></a>
-    <p>© <span id="current-year"></span> Guilherme Cavalheiro. Projetos demonstrativos.</p>
+
+    <p>
+        © <span id="current-year"></span>
+        Guilherme Cavalheiro.
+        Desenvolvedor Independente.
+    </p>
+
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>

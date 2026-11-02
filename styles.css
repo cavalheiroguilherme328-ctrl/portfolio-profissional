@@ -1,3 +1,4 @@
+
 :root {
     --background: #101010;
     --surface: #181818;
@@ -389,6 +390,30 @@ button {
     font-size: 12px;
 }
 
+/* Chamada para orçamento */
+
+.services-cta {
+    margin-top: 35px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.services-cta p {
+    color: var(--text);
+    font-size: 15px;
+}
+
+.services-cta .button {
+    flex-shrink: 0;
+}
+
+/* Tecnologias e processo */
+
 .technology-list {
     display: flex;
     flex-wrap: wrap;
@@ -449,6 +474,8 @@ button {
     outline-offset: 4px;
 }
 
+/* Tablets */
+
 @media (max-width: 850px) {
     .hero {
         grid-template-columns: 1fr;
@@ -468,6 +495,8 @@ button {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/* Celulares */
 
 @media (max-width: 600px) {
     .header {
@@ -523,6 +552,16 @@ button {
         min-height: 200px;
     }
 
+    .services-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services-cta .button {
+        width: 100%;
+        text-align: center;
+    }
+
     .contact {
         padding: 85px 7%;
     }
@@ -536,6 +575,8 @@ button {
         text-align: center;
     }
 }
+
+/* Acessibilidade: reduzir animações */
 
 @media (prefers-reduced-motion: reduce) {
     *,
