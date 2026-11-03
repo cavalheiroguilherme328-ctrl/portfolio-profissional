@@ -21,7 +21,7 @@ self.addEventListener("install", (event) => {
             .then((cache) => cache.addAll(FILES_TO_CACHE))
     );
 
-    self.skipWaiting();
+
 });
 
 // Ativa a nova versão e remove caches antigos
@@ -74,4 +74,10 @@ self.addEventListener("fetch", (event) => {
                 });
             })
     );
+});
+// Recebe o comando do botão "Atualizar agora"
+self.addEventListener("message", (event) => {
+    if (event.data && event.data.action === "SKIP_WAITING") {
+        self.skipWaiting();
+    }
 });

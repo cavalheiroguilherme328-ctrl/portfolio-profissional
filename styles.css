@@ -667,3 +667,53 @@ button {
         padding: 20px;
     }
 }
+/* Aviso de atualização do aplicativo */
+.update-notice {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 32px);
+    max-width: 480px;
+    padding: 18px;
+    background: #151515;
+    border: 1px solid var(--gold);
+    color: var(--text);
+    z-index: 9999;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.update-notice[hidden] {
+    display: none;
+}
+
+.update-notice-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.update-notice-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.update-notice-content button {
+    padding: 10px 14px;
+    background: var(--gold);
+    color: #111;
+    border: none;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+    .update-notice-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
