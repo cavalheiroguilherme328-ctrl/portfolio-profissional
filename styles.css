@@ -604,3 +604,66 @@ button {
         animation-duration: 0.01ms !important;
     }
 }
+
+/* Formulário de orçamento */
+
+.budget-form {
+    width: 100%;
+    max-width: 650px;
+    margin: 45px auto 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    color: var(--text);
+    background: #151515;
+    border: 1px solid var(--border);
+    border-radius: 0;
+    font: inherit;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 1px solid var(--gold);
+    border-color: var(--gold);
+}
+
+.budget-form .button {
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .budget-form {
+        padding: 20px;
+    }
+}

@@ -8,6 +8,7 @@
     <meta name="description" content="Guilherme Cavalheiro, desenvolvedor independente de sites e soluções digitais. Landing pages, sites institucionais e projetos personalizados.">
 
     <meta name="theme-color" content="#111111">
+    <link rel="manifest" href="manifest.json">
 
     <title>Guilherme Cavalheiro | Desenvolvedor Independente</title>
 
@@ -327,6 +328,46 @@
             Entre em contato para conversar sobre seu projeto
             e solicitar um orçamento.
         </p>
+
+        <form class="budget-form" id="budget-form">
+
+            <div class="form-group">
+                <label for="client-name">Seu nome</label>
+                <input type="text" id="client-name" name="name" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="project-type">Tipo de projeto</label>
+                <select id="project-type" name="project" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="Landing Page">Landing Page</option>
+                    <option value="Site Institucional">Site Institucional</option>
+                    <option value="Site Personalizado">Site Personalizado</option>
+                    <option value="Ainda não sei">Ainda não sei</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="project-deadline">Prazo desejado</label>
+                <select id="project-deadline" name="deadline" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="O mais rápido possível">O mais rápido possível</option>
+                    <option value="Em até 30 dias">Em até 30 dias</option>
+                    <option value="Em 1 a 3 meses">Em 1 a 3 meses</option>
+                    <option value="Sem prazo definido">Sem prazo definido</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="project-description">Conte um pouco sobre seu projeto</label>
+                <textarea id="project-description" name="description" placeholder="Descreva o que você precisa..." required></textarea>
+            </div>
+
+            <button type="submit" class="button primary">
+                Enviar solicitação pelo WhatsApp
+            </button>
+
+        </form>
 
         <div class="contact-actions">
 
