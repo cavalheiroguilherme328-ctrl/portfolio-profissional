@@ -41,3 +41,34 @@ if ("serviceWorker" in navigator) {
         }
     });
 }
+// Envio de orçamento pelo WhatsApp
+document.addEventListener("DOMContentLoaded", () => {
+    const budgetForm = document.getElementById("budget-form");
+
+    if (!budgetForm) return;
+
+    budgetForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const name = document.getElementById("client-name").value.trim();
+        const project = document.getElementById("project-type").value;
+        const deadline = document.getElementById("project-deadline").value;
+        const description = document.getElementById("project-description").value.trim();
+
+        const whatsappNumber = "5551993379406";
+
+        const message = 
+`Olá! Gostaria de solicitar um orçamento.
+
+Nome: ${name}
+Tipo de projeto: ${project}
+Prazo desejado: ${deadline}
+
+Descrição:
+${description}`;
+
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+        window.location.href = whatsappURL;
+    });
+});

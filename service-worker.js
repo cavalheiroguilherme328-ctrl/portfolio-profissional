@@ -2,7 +2,7 @@
 
 
 
-const CACHE_NAME = "portfolio-guilherme-v2";
+const CACHE_NAME = "portfolio-guilherme-v3";
 
 const FILES_TO_CACHE = [
     "./",
